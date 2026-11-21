@@ -71,3 +71,7 @@ Both EEG feature sets increase error on this small sample. Full-recording upstre
 - [Cambridge Rainbow Group's emotionally intelligent interfaces](https://www.cl.cam.ac.uk/research/rainbow/emotions/), related work on contextual affect inference in interactive systems.
 - [Cambridge Cognitive Architecture](https://www.cca.arct.cam.ac.uk/), a related closed-loop design direction using neural and physiological signals for responsive environments.
 - [AMIGOS paper](https://eecs.qmul.ac.uk/mmv/datasets/amigos/doc/Paper_TAC.pdf), a candidate for studying longer video trajectories with windowed external affect ratings.
+
+## License
+
+Code is released under the [MIT License](LICENSE). The bundled Nunito and Patrick Hand fonts in fonts/ are under the SIL Open Font License; see fonts/OFL-*.txt. The original team course slides are not part of this repository.
