@@ -1,0 +1,303 @@
+{
+  "revision": "5f40c0476bde48d195de55c933293a0849977011",
+  "benchmark_git_blob": "0b971089096864802b9388cfa2a390fb8478b177",
+  "source_sha256": {
+    "data/metadata/01_behavior_MAES.json": "b08571e970f8ee8a336a3c30b309c97d80ec141b4fc6ac0d967c86953ddc14b2",
+    "data/EEG_data/EEG_DE_avg/01_idx2de_nor_avg.json": "ac5510a39191fea5e44ead0f42062ca920704d5514c4310156fe3f96e7ecb25b",
+    "data/metadata/02_behavior_MAES.json": "69e128d873e6090030e587b91ffece45f412b301f5ee6e8ada8a93865750fc47",
+    "data/EEG_data/EEG_DE_avg/02_idx2de_nor_avg.json": "72d9372b8a8f35f0eceb16a1dd43b62c578d3de3a56f744d581f692a1016705e",
+    "data/metadata/03_behavior_MAES.json": "eb67cd1593dead7b6b1ff7e63b024e1729d806c75e70d4cfef899d82bb22fe72",
+    "data/EEG_data/EEG_DE_avg/03_idx2de_nor_avg.json": "01a8d89fe3b63f1a492bcd59b8a5a07912cc23c9d9962dfd2df038457c4f8fb0",
+    "data/metadata/04_behavior_MAES.json": "f70241aa1a96c2ccfe58ad6aaecd7e0d3df78d9a45209a7b2c42255320b88c45",
+    "data/EEG_data/EEG_DE_avg/04_idx2de_nor_avg.json": "36404aef9913b1d9575e2d580a4bd7d026a4a280186a050ead4ab4f8a9b85e5a",
+    "data/metadata/05_behavior_MAES.json": "46f0aa42c754080ee7cbb063a9afea118c4b0bdab8974079f131eb6e160f896e",
+    "data/EEG_data/EEG_DE_avg/05_idx2de_nor_avg.json": "23cdc33585660f5797bcd48aa0bda8234c80e5245be6f027083316d600534438",
+    "data/metadata/06_behavior_MAES.json": "a10ab7f9e8c698e760990e32f456bce8555362755c9b1c8c7174536f40a55826",
+    "data/EEG_data/EEG_DE_avg/06_idx2de_nor_avg.json": "bc26aac4f07abd9c3517a1e72dc7ba92e47f08e7065232c9c754f86353c08a11",
+    "data/metadata/07_behavior_MAES.json": "79e5634539ba77df7d739641fd444b6a094c7c89b6d83a56321d391e7e01b720",
+    "data/EEG_data/EEG_DE_avg/07_idx2de_nor_avg.json": "ed5548083634100d4d3952682843fdcc01a5a9dc4fa6e41008a987b7ba1f7dc7",
+    "data/metadata/08_behavior_MAES.json": "7b8943e18f2251096daeaf5216ca65c76082d5a11a9a7c8229fc602d1f75a5d1",
+    "data/EEG_data/EEG_DE_avg/08_idx2de_nor_avg.json": "1c9befe6efdbdcfb801c55e2209f6d9b739241238b531aa582ab4f5f66a313f4",
+    "data/metadata/09_behavior_MAES.json": "a2e05255d8a9eed6d4b35226125436d8ab7fcd52175f2b8f4e0922ad30cade58",
+    "data/EEG_data/EEG_DE_avg/09_idx2de_nor_avg.json": "6892015cdb777ee964d70a92e27f41059cd4cdb64001cd613f80213f9994e21b",
+    "data/metadata/10_behavior_MAES.json": "5c9ab8e85cabc994d70820859f6f1dba30959f123b4417d610914967dd6e87d4",
+    "data/EEG_data/EEG_DE_avg/10_idx2de_nor_avg.json": "3881c3ec515714354490ab532d75f7ce782a113c67262008ed7491078bf4a94d",
+    "data/metadata/11_behavior_MAES.json": "a88539754ef7f7132582ac6e67791f713baa145fec335886007563ff7a52c9b6",
+    "data/EEG_data/EEG_DE_avg/11_idx2de_nor_avg.json": "1272be2a00b582ed447b41895c26e9acb6d24a40edb0a5f283a45e9c059e6bcb",
+    "data/metadata/12_behavior_MAES.json": "b98cddb8b2b5b36afa529bde8b2372cef0a7deb52a1d58cb6278586d7c7d5a15",
+    "data/EEG_data/EEG_DE_avg/12_idx2de_nor_avg.json": "583425f3aa4e111f76c5f597fd87799219dedd67eea2d775808437306b6784b5",
+    "data/metadata/13_behavior_MAES.json": "c112f57bbe01b69f50ab7de57b16cdd17f561dcc00ffce54c7983f84c5daf1fd",
+    "data/EEG_data/EEG_DE_avg/13_idx2de_nor_avg.json": "2bbcb83243dfdf6bd51431e5f3a4d1014e28cdd0afbaf144880c84d746a98906",
+    "data/metadata/14_behavior_MAES.json": "bd737cdf2656c94191843d2016b417154e4e91ca60e17a64cbc357e47e332188",
+    "data/EEG_data/EEG_DE_avg/14_idx2de_nor_avg.json": "af30c6e871819ca4acb323838d030b8381f1286dbe76c6ad7e3bd9206949ec61",
+    "data/metadata/15_behavior_MAES.json": "82162f47c0bd0311f40df8547b2763a7a56ffe84f40f883e4daf3c9c26ff6bab",
+    "data/EEG_data/EEG_DE_avg/15_idx2de_nor_avg.json": "fb44bc5ca29eb637084da70f43956bab29cf2bc4f79da7ad9e433f2c4f7df404",
+    "data/metadata/16_behavior_MAES.json": "29f0212939fc74a4e686e343e3a2864a086cf3d26b1095ef4441e80de630b6e5",
+    "data/EEG_data/EEG_DE_avg/16_idx2de_nor_avg.json": "74910c06473eaf58d6ea463404ce765a0dbda3d8691142e0a7e4b8f1c104da36",
+    "data/metadata/17_behavior_MAES.json": "3022b8d67a14e097d02cae47b7db7cf17ab32edac527c88975dc7b77f7d4c828",
+    "data/EEG_data/EEG_DE_avg/17_idx2de_nor_avg.json": "94c44e68d35c1c7246198004e6225107d0dd52f5979b6451a68d6fd7399e8872",
+    "data/metadata/18_behavior_MAES.json": "790061821dbafe00caa2497211a2924944372aced03cfb4bd748052a44057965",
+    "data/EEG_data/EEG_DE_avg/18_idx2de_nor_avg.json": "d3a4c8cd7e882166ff43773f1ecc5f203b7e2947a716cc18b70a3f586e71f29a",
+    "data/metadata/19_behavior_MAES.json": "06b7974bf030e9ab35df73f1c7783940d7a996d5f61df83c7b39b0a82b9362a5",
+    "data/EEG_data/EEG_DE_avg/19_idx2de_nor_avg.json": "c4983581aa9e2fd2bbac3490d1c3b48d641cc0876443e271a9f387ba29feb338",
+    "data/metadata/20_behavior_MAES.json": "97ba6dd5bf05689ecda8e8278bb14ec7e90db7c20e38c60b0252e1f1bab9525d",
+    "data/EEG_data/EEG_DE_avg/20_idx2de_nor_avg.json": "7a901539e77f33b59ea47ba50d75d979895b83759f3d613d639247baedc073ed",
+    "data/metadata/21_behavior_MAES.json": "87546ac60bb1115e4f7b9284e440ad30d6f577817b53b98ec4b0a230c29efab7",
+    "data/EEG_data/EEG_DE_avg/21_idx2de_nor_avg.json": "444d403820f1f475697fbab5cc71a67c4242568d631f869fe0bae58db5d573ba",
+    "data/metadata/22_behavior_MAES.json": "0e0ab4322dff747213e23f6d6f4c0a2bf62bab18e56b16cc59677ecc36572ffd",
+    "data/EEG_data/EEG_DE_avg/22_idx2de_nor_avg.json": "9c73d95495fc1931414f230d1e2e66119269b97fd0eb0ebaba486ec9e18fb628",
+    "data/metadata/23_behavior_MAES.json": "68cecb373135f152dbc1f4473f5dd841e4e069b209c78034e9d024fa52fb0326",
+    "data/EEG_data/EEG_DE_avg/23_idx2de_nor_avg.json": "411988fba32773ead7542103c5fa4699393f96f30ed968fc0394572b1c01aea9",
+    "data/metadata/24_behavior_MAES.json": "cc7bfd973062c93a5329c5b860f929856e3c8b75bc8557e0731a2350517c411d",
+    "data/EEG_data/EEG_DE_avg/24_idx2de_nor_avg.json": "952ea6bd907dab7e58f1e313817e69d3d2c051770643cf675f25820fda12ae45",
+    "data/metadata/25_behavior_MAES.json": "99b8312b3d8864189a212a7b2774e8b1b27ea8c5866a782c35cf69b56be9c1f7",
+    "data/EEG_data/EEG_DE_avg/25_idx2de_nor_avg.json": "ad017a54491380ca96a119791c5edf95ea36faf2ecc3d77d0af4242b2ae60cb8",
+    "data/metadata/26_behavior_MAES.json": "bf2666a6eae928992c0d957cea06f7c655616722980af6e6ab5aab62cd956ccd",
+    "data/EEG_data/EEG_DE_avg/26_idx2de_nor_avg.json": "5cbc506315cb2b5466d76b8ab560cd97785afa09f80b0e64fd2e6d6a65ca9131",
+    "data/metadata/27_behavior_MAES.json": "7bde81924036998b2d66ff0fa23511ac184a62913627f63955c52521b18cf6d9",
+    "data/EEG_data/EEG_DE_avg/27_idx2de_nor_avg.json": "151afd45b93259c5eaec4ff3ed5607d46712f17056372b5fbbca96c8b77b69d8",
+    "data/metadata/28_behavior_MAES.json": "c77acf0d4cd71c5e620227ce37be65382d795562984f73a3d01eb0e3e50904c0",
+    "data/EEG_data/EEG_DE_avg/28_idx2de_nor_avg.json": "2c9c268c3b9be11c5bf69f0a9a7e35c2cb88ac8b89797faaf9f14fe24ab79443",
+    "data/metadata/29_behavior_MAES.json": "49afb1c197fee039be9175601b932d2998db0577e73a1b23d07abbd697429006",
+    "data/EEG_data/EEG_DE_avg/29_idx2de_nor_avg.json": "425993e4c88c86e58122324d40a06bc937e64731185486bbb58f85647a9c62e7",
+    "data/metadata/30_behavior_MAES.json": "e8006d3a1c2dce4f259ad197efbc66558285f32ac73eeb742c825229148ee5ad",
+    "data/EEG_data/EEG_DE_avg/30_idx2de_nor_avg.json": "2d9bd47ca7882aae34d14ce4afbde6de78919e133efa93142866f33551a2a402",
+    "code/rec_benchmarch/EEGvRec_EEG_all.inter": "2c1aac7dbdfa38d5c11558b7f0553e5757597f2468b56cb454ed39cdab13a7ac"
+  },
+  "verified_pairs": 91,
+  "verified_participants": [
+    1
+  ],
+  "inventory": [
+    {
+      "participant": 1,
+      "metadata_rows": 149,
+      "eeg_rows": 149,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 2,
+      "metadata_rows": 111,
+      "eeg_rows": 111,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 3,
+      "metadata_rows": 145,
+      "eeg_rows": 145,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 4,
+      "metadata_rows": 121,
+      "eeg_rows": 121,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 5,
+      "metadata_rows": 150,
+      "eeg_rows": 150,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 6,
+      "metadata_rows": 132,
+      "eeg_rows": 132,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 7,
+      "metadata_rows": 42,
+      "eeg_rows": 42,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 8,
+      "metadata_rows": 135,
+      "eeg_rows": 135,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 9,
+      "metadata_rows": 130,
+      "eeg_rows": 130,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 10,
+      "metadata_rows": 110,
+      "eeg_rows": 110,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 11,
+      "metadata_rows": 119,
+      "eeg_rows": 119,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 12,
+      "metadata_rows": 134,
+      "eeg_rows": 134,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 13,
+      "metadata_rows": 124,
+      "eeg_rows": 124,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 14,
+      "metadata_rows": 145,
+      "eeg_rows": 145,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 15,
+      "metadata_rows": 124,
+      "eeg_rows": 124,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 16,
+      "metadata_rows": 157,
+      "eeg_rows": 157,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 17,
+      "metadata_rows": 108,
+      "eeg_rows": 109,
+      "feature_keys_without_matching_view_order": [
+        "108"
+      ],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 18,
+      "metadata_rows": 138,
+      "eeg_rows": 143,
+      "feature_keys_without_matching_view_order": [
+        "138",
+        "139",
+        "140",
+        "141",
+        "142"
+      ],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 19,
+      "metadata_rows": 137,
+      "eeg_rows": 138,
+      "feature_keys_without_matching_view_order": [
+        "134"
+      ],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 20,
+      "metadata_rows": 108,
+      "eeg_rows": 108,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 21,
+      "metadata_rows": 123,
+      "eeg_rows": 123,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 22,
+      "metadata_rows": 140,
+      "eeg_rows": 140,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 23,
+      "metadata_rows": 108,
+      "eeg_rows": 108,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 24,
+      "metadata_rows": 95,
+      "eeg_rows": 95,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 25,
+      "metadata_rows": 96,
+      "eeg_rows": 96,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 26,
+      "metadata_rows": 100,
+      "eeg_rows": 100,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 27,
+      "metadata_rows": 129,
+      "eeg_rows": 129,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 28,
+      "metadata_rows": 108,
+      "eeg_rows": 108,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 29,
+      "metadata_rows": 145,
+      "eeg_rows": 146,
+      "feature_keys_without_matching_view_order": [
+        "145"
+      ],
+      "alignment": "unverified outside paired benchmark"
+    },
+    {
+      "participant": 30,
+      "metadata_rows": 94,
+      "eeg_rows": 94,
+      "feature_keys_without_matching_view_order": [],
+      "alignment": "unverified outside paired benchmark"
+    }
+  ],
+  "rejected_benchmark_rows": [
+    {
+      "line": 93,
+      "reason": "incomplete benchmark row"
+    }
+  ],
+  "finding": "The preprocessing assigns indices after filtering records. Viewing order alone does not establish alignment.",
+  "scope": "Only exact benchmark-matched pairs are admitted to the new evaluation."
+}

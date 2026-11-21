@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neuro-Flow · Signal Replay</title>
+<meta name="theme-color" content="#f5f0e6">
+<link rel="stylesheet" href="demo.css">
+</head>
+<body>
+<main>
+<header>
+  
+  <div class="kicker">November 2026 · Independent follow-up · Engineering prototype</div>
+  <h1>Neuro-Flow</h1>
+  <p class="lede">A video recommendation sandbox based on a February 2026 team design project. Enable the simulated signal and play the recovery trace to see when the next recommendations change.</p>
+<p><a href="methods.html">Methods, results and held-out prediction replay →</a></p>
+</header>
+<div class="grid">
+  <section class="panel">
+    <h2>01 · Response replay</h2>
+    <p class="muted">Simulated response to “How bridges carry loads” · Engineering</p>
+    <div class="controls">
+      <label>Scenario <select id="scenario">
+        <option value="recovery">Early friction, later recovery</option>
+        <option value="flat">Sustained low response</option>
+        <option value="dropout">Signal dropout</option>
+        <option value="artifact">Low-quality spike</option>
+      </select></label>
+      <button id="play" class="primary" type="button">Play</button>
+      <button id="step" type="button">Step</button>
+      <button id="reset" type="button">Reset</button>
+    </div>
+    <div class="tag">Synthetic valence proxy · 1 step = 1 simulated second</div>
+    <svg id="trace" viewBox="0 0 430 130" role="img" aria-label="Synthetic response plotted over replay time">
+      <path d="M28 19H420 M28 57H420 M28 95H420" fill="none" class="trace-grid"/>
+      <text x="1" y="23">+1</text><text x="8" y="61">0</text><text x="1" y="99">−1</text>
+      <text x="28" y="118">0 s</text><text x="391" y="118">11 s</text>
+      <path id="series" fill="none" stroke-width="3" stroke-linecap="round"/>
+      <circle id="point" r="4" visibility="hidden"/>
+    </svg>
+    <p id="status" class="muted" aria-live="polite"></p>
+  </section>
+  <section class="panel">
+    <h2>02 · User controls</h2>
+    <div class="controls">
+      <label>Viewing goal <select id="goal">
+        <option value="learn">Learn</option><option value="relax">Relax</option><option value="explore">Explore</option>
+      </select></label>
+      <label><input id="consent" type="checkbox"> Use simulated signal</label>
+    </div>
+    <p>Was the bridge video worth your time?</p>
+    <div class="controls">
+      <button data-feedback="1" type="button" aria-pressed="false">Yes</button>
+      <button data-feedback="-1" type="button" aria-pressed="false">No</button>
+      <button data-feedback="0" type="button" aria-pressed="true">Clear</button>
+    </div>
+    <p id="feedback-status" class="muted" aria-live="polite"></p>
+    <p class="muted">Explicit feedback overrides signal influence. Low-quality or missing windows suppress it. Controls and state stay in this tab.</p>
+  </section>
+</div>
+<div class="grid compare">
+  <section class="panel">
+    <h2>03 · Engagement baseline</h2>
+    <p class="muted">Ranks by a preset engagement score.</p>
+    <ol id="baseline" class="list"></ol>
+  </section>
+  <section class="panel">
+    <h2>04 · Goals and feedback</h2>
+    <p class="muted">Uses your viewing goal and explicit feedback.</p>
+    <ol id="goal-only" class="list"></ol>
+  </section>
+  <section class="panel">
+    <h2>05 · With signal</h2>
+    <p class="muted">Adds an optional cue when the signal quality meets the threshold.</p>
+    <ol id="ranked" class="list"></ol>
+    <p id="comparison" class="muted" aria-live="polite"></p>
+  </section>
+</div>
+<footer>The two goal-based rankings can include an alternative topic when the top three would otherwise all share a topic. All items, responses, scores and quality values are synthetic. The sandbox demonstrates policy behavior.</footer>
+</main>
+<script src="policy.js"></script>
+<script>
+"use strict";
+const byId = id => document.getElementById(id);
+const state = {count:0, feedback:0, timer:null};
+
+function renderList(target, items) {
+  target.replaceChildren(...items.map((item,index) => {
+    const row = document.createElement("li");
+    const content = document.createElement("div");
+    const title = document.createElement("strong");
+    title.textContent = `${index+1}. ${item.title}`;
+    const detail = document.createElement("small");
+    let reason = item.topic;
+    if (item.change) reason += ` · ${item.change > 0 ? "+" : ""}${item.change.toFixed(2)} ${state.feedback ? "feedback" : "signal"}`;
+    if (item.diversity) reason += " · alternative topic";
+    detail.textContent = reason;
+    content.append(title,document.createElement("br"),detail);
+    const score = document.createElement("span");
+    score.className = "score";
+    score.textContent = item.score.toFixed(2);
+    row.append(content,score);
+    return row;
+  }));
+}
+
+function render() {
+  const samples = scenarios[byId("scenario").value].slice(0,state.count);
+  const path = samples.flatMap(({value},index) => value === null ? [] : [
+    `${index && samples[index-1].value !== null ? "L" : "M"}${28+index*35.64},${57-value*38}`
+  ]);
+  byId("series").setAttribute("d",path.join(" "));
+  const latest = samples.at(-1);
+  byId("point").setAttribute("visibility",latest && latest.value !== null ? "visible" : "hidden");
+  if (latest && latest.value !== null) {
+    byId("point").setAttribute("data-quality", latest.quality < .65 ? "low" : "usable");
+    byId("point").setAttribute("cx",28+(samples.length-1)*35.64);
+    byId("point").setAttribute("cy",57-latest.value*38);
+  }
+  const policy = signalPolicy(samples,byId("consent").checked,state.feedback);
+  const time = samples.length ? `t = ${samples.length-1} s · Quality ${latest.quality.toFixed(2)}` : "Ready";
+  byId("status").textContent = `${time}. ${policy.reason}`;
+  const labels = {"-1":"The user rated the current topic down.",0:"No explicit feedback.",1:"The user rated the current topic up."};
+  byId("feedback-status").textContent = labels[state.feedback];
+  for (const button of document.querySelectorAll("[data-feedback]")) {
+    button.setAttribute("aria-pressed",Number(button.dataset.feedback) === state.feedback);
+  }
+  const goal = byId("goal").value;
+  const control = rankItems(catalog, goal, state.feedback, 0);
+  const treatment = rankItems(catalog, goal, state.feedback, policy.adjustment);
+  renderList(byId("goal-only"), control);
+  renderList(byId("ranked"), treatment);
+  const sameOrder = control.every((item, index) => item.title === treatment[index].title);
+  byId("comparison").textContent = sameOrder
+    ? "Same order as goals and feedback."
+    : "The signal changed the order.";
+  byId("step").disabled = state.count === 12;
+}
+
+function pause() {
+  clearInterval(state.timer);
+  state.timer = null;
+  byId("play").textContent = state.count === 12 ? "Replay" : "Play";
+}
+
+function step() {
+  state.count = Math.min(12,state.count+1);
+  if (state.count === 12) pause();
+  render();
+}
+
+byId("play").addEventListener("click",() => {
+  if (state.timer !== null) { pause(); return; }
+  if (state.count === 12) state.count = 0;
+  byId("play").textContent = "Pause";
+  state.timer = setInterval(step,450);
+  step();
+});
+byId("step").addEventListener("click",() => { pause(); step(); });
+byId("reset").addEventListener("click",() => {
+  state.count = 0;
+  state.feedback = 0;
+  pause();
+  render();
+});
+byId("scenario").addEventListener("change",() => {
+  state.count = 0;
+  pause();
+  render();
+});
+byId("goal").addEventListener("change",render);
+byId("consent").addEventListener("change",render);
+for (const button of document.querySelectorAll("[data-feedback]")) {
+  button.addEventListener("click",() => { state.feedback = Number(button.dataset.feedback); render(); });
+}
+renderList(byId("baseline"),[...catalog].sort((a,b) => b.engagement-a.engagement)
+  .slice(0,3).map(item => ({...item,score:item.engagement})));
+render();
+</script>
+</body>
+</html>

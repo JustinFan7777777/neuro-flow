@@ -1,0 +1,370 @@
+{
+  "schema": "neuro-flow-replay-v1",
+  "scope": "Verified participant 01 sample; chronological 70/30 split; inner chronological validation",
+  "rows": [
+    {
+      "participant": 1,
+      "item": "63",
+      "video_order": 64,
+      "session": 2,
+      "observed": 4.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 3.518093357374055,
+        "eeg_summary": 3.0199507359211446,
+        "eeg_channels": 3.184926282156083
+      }
+    },
+    {
+      "participant": 1,
+      "item": "64",
+      "video_order": 65,
+      "session": 2,
+      "observed": 2.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 3.579485661158711,
+        "eeg_summary": 3.291895495266233,
+        "eeg_channels": 2.90770059353577
+      }
+    },
+    {
+      "participant": 1,
+      "item": "65",
+      "video_order": 66,
+      "session": 2,
+      "observed": 5.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 3.7118167733783136,
+        "eeg_summary": 3.65661271812303,
+        "eeg_channels": 2.872435248106912
+      }
+    },
+    {
+      "participant": 1,
+      "item": "66",
+      "video_order": 67,
+      "session": 2,
+      "observed": 4.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 3.7004386532343867,
+        "eeg_summary": 3.8502990523121494,
+        "eeg_channels": 3.0283252641093625
+      }
+    },
+    {
+      "participant": 1,
+      "item": "67",
+      "video_order": 68,
+      "session": 2,
+      "observed": 3.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 1.8442392881414358,
+        "eeg_summary": 1.8304379713213477,
+        "eeg_channels": 2.251979306513047
+      }
+    },
+    {
+      "participant": 1,
+      "item": "68",
+      "video_order": 69,
+      "session": 2,
+      "observed": 1.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 1.393618208209589,
+        "eeg_summary": 1.5846947823945017,
+        "eeg_channels": 2.4839290523475905
+      }
+    },
+    {
+      "participant": 1,
+      "item": "69",
+      "video_order": 70,
+      "session": 2,
+      "observed": 3.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 3.8777716434722347,
+        "eeg_summary": 3.8837779629855462,
+        "eeg_channels": 3.1016245493789443
+      }
+    },
+    {
+      "participant": 1,
+      "item": "70",
+      "video_order": 71,
+      "session": 2,
+      "observed": 2.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 1.774234881300373,
+        "eeg_summary": 1.7342358477483968,
+        "eeg_channels": 2.225486810922783
+      }
+    },
+    {
+      "participant": 1,
+      "item": "71",
+      "video_order": 72,
+      "session": 2,
+      "observed": 2.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 1.7842121080227076,
+        "eeg_summary": 1.5356608047101117,
+        "eeg_channels": 2.3591931113819147
+      }
+    },
+    {
+      "participant": 1,
+      "item": "72",
+      "video_order": 73,
+      "session": 2,
+      "observed": 2.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 2.057813940248282,
+        "eeg_summary": 1.8336901993291086,
+        "eeg_channels": 2.279587186915389
+      }
+    },
+    {
+      "participant": 1,
+      "item": "73",
+      "video_order": 74,
+      "session": 2,
+      "observed": 4.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 3.685353423062598,
+        "eeg_summary": 3.9036010944357193,
+        "eeg_channels": 2.7307919175620663
+      }
+    },
+    {
+      "participant": 1,
+      "item": "74",
+      "video_order": 75,
+      "session": 2,
+      "observed": 2.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 3.388787883314653,
+        "eeg_summary": 3.496203303264155,
+        "eeg_channels": 2.5904464729591266
+      }
+    },
+    {
+      "participant": 1,
+      "item": "75",
+      "video_order": 76,
+      "session": 2,
+      "observed": 1.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 1.8689196266879478,
+        "eeg_summary": 2.2536539536237186,
+        "eeg_channels": 2.347121918151509
+      }
+    },
+    {
+      "participant": 1,
+      "item": "76",
+      "video_order": 77,
+      "session": 2,
+      "observed": 4.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 3.8276687574726944,
+        "eeg_summary": 3.979373875175618,
+        "eeg_channels": 2.9482142873718704
+      }
+    },
+    {
+      "participant": 1,
+      "item": "77",
+      "video_order": 78,
+      "session": 2,
+      "observed": 1.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 1.3679801325858456,
+        "eeg_summary": 1.6487885833460574,
+        "eeg_channels": 2.406313048463026
+      }
+    },
+    {
+      "participant": 1,
+      "item": "78",
+      "video_order": 79,
+      "session": 2,
+      "observed": 1.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 3.196145021628986,
+        "eeg_summary": 2.956283779407432,
+        "eeg_channels": 2.9937955128231435
+      }
+    },
+    {
+      "participant": 1,
+      "item": "79",
+      "video_order": 80,
+      "session": 2,
+      "observed": 5.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 4.620559907933536,
+        "eeg_summary": 4.558634149660044,
+        "eeg_channels": 3.3854894013962724
+      }
+    },
+    {
+      "participant": 1,
+      "item": "80",
+      "video_order": 81,
+      "session": 2,
+      "observed": 2.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 2.5551444852308687,
+        "eeg_summary": 2.4312911864455913,
+        "eeg_channels": 2.3664578367225277
+      }
+    },
+    {
+      "participant": 1,
+      "item": "81",
+      "video_order": 82,
+      "session": 2,
+      "observed": 1.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 1.6781831889168506,
+        "eeg_summary": 1.6191604143167486,
+        "eeg_channels": 2.009429256714536
+      }
+    },
+    {
+      "participant": 1,
+      "item": "82",
+      "video_order": 83,
+      "session": 2,
+      "observed": 1.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 1.1395241616697747,
+        "eeg_summary": 1.618364758073096,
+        "eeg_channels": 2.287548321938958
+      }
+    },
+    {
+      "participant": 1,
+      "item": "83",
+      "video_order": 84,
+      "session": 2,
+      "observed": 4.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 4.422456224063628,
+        "eeg_summary": 4.580348552335032,
+        "eeg_channels": 3.4803880489413554
+      }
+    },
+    {
+      "participant": 1,
+      "item": "84",
+      "video_order": 85,
+      "session": 2,
+      "observed": 4.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 3.382362781637891,
+        "eeg_summary": 2.9861494443474754,
+        "eeg_channels": 3.5771773413948926
+      }
+    },
+    {
+      "participant": 1,
+      "item": "85",
+      "video_order": 86,
+      "session": 2,
+      "observed": 4.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 2.587798910400677,
+        "eeg_summary": 2.28518823109225,
+        "eeg_channels": 3.56983999113978
+      }
+    },
+    {
+      "participant": 1,
+      "item": "86",
+      "video_order": 87,
+      "session": 2,
+      "observed": 2.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 1.3686521455465654,
+        "eeg_summary": 1.177749998278442,
+        "eeg_channels": 2.583378789212898
+      }
+    },
+    {
+      "participant": 1,
+      "item": "87",
+      "video_order": 88,
+      "session": 2,
+      "observed": 1.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 1.9308832519294012,
+        "eeg_summary": 1.3866896018456385,
+        "eeg_channels": 2.6832984254403645
+      }
+    },
+    {
+      "participant": 1,
+      "item": "88",
+      "video_order": 89,
+      "session": 2,
+      "observed": 4.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 3.8777716434722347,
+        "eeg_summary": 3.706322244221112,
+        "eeg_channels": 2.3863479611101663
+      }
+    },
+    {
+      "participant": 1,
+      "item": "89",
+      "video_order": 90,
+      "session": 2,
+      "observed": 2.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 2.6958607065934537,
+        "eeg_summary": 2.390503492063782,
+        "eeg_channels": 1.7849947421541745
+      }
+    },
+    {
+      "participant": 1,
+      "item": "90",
+      "video_order": 91,
+      "session": 2,
+      "observed": 2.0,
+      "predictions": {
+        "train_mean": 2.2698412698412698,
+        "behavior": 2.1296025679539765,
+        "eeg_summary": 1.8435449185958646,
+        "eeg_channels": 2.5129270580345793
+      }
+    }
+  ]
+}

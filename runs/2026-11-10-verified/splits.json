@@ -1,0 +1,639 @@
+[
+  {
+    "participant": 1,
+    "item": "0",
+    "eeg_index": "0",
+    "video_order": 1,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "1",
+    "eeg_index": "1",
+    "video_order": 2,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "2",
+    "eeg_index": "2",
+    "video_order": 3,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "3",
+    "eeg_index": "3",
+    "video_order": 4,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "4",
+    "eeg_index": "4",
+    "video_order": 5,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "5",
+    "eeg_index": "5",
+    "video_order": 6,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "6",
+    "eeg_index": "6",
+    "video_order": 7,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "7",
+    "eeg_index": "7",
+    "video_order": 8,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "8",
+    "eeg_index": "8",
+    "video_order": 9,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "9",
+    "eeg_index": "9",
+    "video_order": 10,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "10",
+    "eeg_index": "10",
+    "video_order": 11,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "11",
+    "eeg_index": "11",
+    "video_order": 12,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "12",
+    "eeg_index": "12",
+    "video_order": 13,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "13",
+    "eeg_index": "13",
+    "video_order": 14,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "14",
+    "eeg_index": "14",
+    "video_order": 15,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "15",
+    "eeg_index": "15",
+    "video_order": 16,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "16",
+    "eeg_index": "16",
+    "video_order": 17,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "17",
+    "eeg_index": "17",
+    "video_order": 18,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "18",
+    "eeg_index": "18",
+    "video_order": 19,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "19",
+    "eeg_index": "19",
+    "video_order": 20,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "20",
+    "eeg_index": "20",
+    "video_order": 21,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "21",
+    "eeg_index": "21",
+    "video_order": 22,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "22",
+    "eeg_index": "22",
+    "video_order": 23,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "23",
+    "eeg_index": "23",
+    "video_order": 24,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "24",
+    "eeg_index": "24",
+    "video_order": 25,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "25",
+    "eeg_index": "25",
+    "video_order": 26,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "26",
+    "eeg_index": "26",
+    "video_order": 27,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "27",
+    "eeg_index": "27",
+    "video_order": 28,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "28",
+    "eeg_index": "28",
+    "video_order": 29,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "29",
+    "eeg_index": "29",
+    "video_order": 30,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "30",
+    "eeg_index": "30",
+    "video_order": 31,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "31",
+    "eeg_index": "31",
+    "video_order": 32,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "32",
+    "eeg_index": "32",
+    "video_order": 33,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "33",
+    "eeg_index": "33",
+    "video_order": 34,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "34",
+    "eeg_index": "34",
+    "video_order": 35,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "35",
+    "eeg_index": "35",
+    "video_order": 36,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "36",
+    "eeg_index": "36",
+    "video_order": 37,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "37",
+    "eeg_index": "37",
+    "video_order": 38,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "38",
+    "eeg_index": "38",
+    "video_order": 39,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "39",
+    "eeg_index": "39",
+    "video_order": 40,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "40",
+    "eeg_index": "40",
+    "video_order": 41,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "41",
+    "eeg_index": "41",
+    "video_order": 42,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "42",
+    "eeg_index": "42",
+    "video_order": 43,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "43",
+    "eeg_index": "43",
+    "video_order": 44,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "44",
+    "eeg_index": "44",
+    "video_order": 45,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "45",
+    "eeg_index": "45",
+    "video_order": 46,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "46",
+    "eeg_index": "46",
+    "video_order": 47,
+    "split": "inner_fit"
+  },
+  {
+    "participant": 1,
+    "item": "47",
+    "eeg_index": "47",
+    "video_order": 48,
+    "split": "inner_validation"
+  },
+  {
+    "participant": 1,
+    "item": "48",
+    "eeg_index": "48",
+    "video_order": 49,
+    "split": "inner_validation"
+  },
+  {
+    "participant": 1,
+    "item": "49",
+    "eeg_index": "49",
+    "video_order": 50,
+    "split": "inner_validation"
+  },
+  {
+    "participant": 1,
+    "item": "50",
+    "eeg_index": "50",
+    "video_order": 51,
+    "split": "inner_validation"
+  },
+  {
+    "participant": 1,
+    "item": "51",
+    "eeg_index": "51",
+    "video_order": 52,
+    "split": "inner_validation"
+  },
+  {
+    "participant": 1,
+    "item": "52",
+    "eeg_index": "52",
+    "video_order": 53,
+    "split": "inner_validation"
+  },
+  {
+    "participant": 1,
+    "item": "53",
+    "eeg_index": "53",
+    "video_order": 54,
+    "split": "inner_validation"
+  },
+  {
+    "participant": 1,
+    "item": "54",
+    "eeg_index": "54",
+    "video_order": 55,
+    "split": "inner_validation"
+  },
+  {
+    "participant": 1,
+    "item": "55",
+    "eeg_index": "55",
+    "video_order": 56,
+    "split": "inner_validation"
+  },
+  {
+    "participant": 1,
+    "item": "56",
+    "eeg_index": "56",
+    "video_order": 57,
+    "split": "inner_validation"
+  },
+  {
+    "participant": 1,
+    "item": "57",
+    "eeg_index": "57",
+    "video_order": 58,
+    "split": "inner_validation"
+  },
+  {
+    "participant": 1,
+    "item": "58",
+    "eeg_index": "58",
+    "video_order": 59,
+    "split": "inner_validation"
+  },
+  {
+    "participant": 1,
+    "item": "59",
+    "eeg_index": "59",
+    "video_order": 60,
+    "split": "inner_validation"
+  },
+  {
+    "participant": 1,
+    "item": "60",
+    "eeg_index": "60",
+    "video_order": 61,
+    "split": "inner_validation"
+  },
+  {
+    "participant": 1,
+    "item": "61",
+    "eeg_index": "61",
+    "video_order": 62,
+    "split": "inner_validation"
+  },
+  {
+    "participant": 1,
+    "item": "62",
+    "eeg_index": "62",
+    "video_order": 63,
+    "split": "inner_validation"
+  },
+  {
+    "participant": 1,
+    "item": "63",
+    "eeg_index": "63",
+    "video_order": 64,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "64",
+    "eeg_index": "64",
+    "video_order": 65,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "65",
+    "eeg_index": "65",
+    "video_order": 66,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "66",
+    "eeg_index": "66",
+    "video_order": 67,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "67",
+    "eeg_index": "67",
+    "video_order": 68,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "68",
+    "eeg_index": "68",
+    "video_order": 69,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "69",
+    "eeg_index": "69",
+    "video_order": 70,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "70",
+    "eeg_index": "70",
+    "video_order": 71,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "71",
+    "eeg_index": "71",
+    "video_order": 72,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "72",
+    "eeg_index": "72",
+    "video_order": 73,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "73",
+    "eeg_index": "73",
+    "video_order": 74,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "74",
+    "eeg_index": "74",
+    "video_order": 75,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "75",
+    "eeg_index": "75",
+    "video_order": 76,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "76",
+    "eeg_index": "76",
+    "video_order": 77,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "77",
+    "eeg_index": "77",
+    "video_order": 78,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "78",
+    "eeg_index": "78",
+    "video_order": 79,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "79",
+    "eeg_index": "79",
+    "video_order": 80,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "80",
+    "eeg_index": "80",
+    "video_order": 81,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "81",
+    "eeg_index": "81",
+    "video_order": 82,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "82",
+    "eeg_index": "82",
+    "video_order": 83,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "83",
+    "eeg_index": "83",
+    "video_order": 84,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "84",
+    "eeg_index": "84",
+    "video_order": 85,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "85",
+    "eeg_index": "85",
+    "video_order": 86,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "86",
+    "eeg_index": "86",
+    "video_order": 87,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "87",
+    "eeg_index": "87",
+    "video_order": 88,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "88",
+    "eeg_index": "88",
+    "video_order": 89,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "89",
+    "eeg_index": "89",
+    "video_order": 90,
+    "split": "test"
+  },
+  {
+    "participant": 1,
+    "item": "90",
+    "eeg_index": "90",
+    "video_order": 91,
+    "split": "test"
+  }
+]

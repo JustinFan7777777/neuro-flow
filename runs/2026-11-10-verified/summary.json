@@ -1,0 +1,49 @@
+{
+  "protocol": "Verified participant 01 sample; chronological 70/30 split; inner chronological validation",
+  "verified_pairs": 91,
+  "train_rows": 63,
+  "test_rows": 28,
+  "inner_fit_rows": 47,
+  "inner_validation_rows": 16,
+  "mae": {
+    "train_mean": 1.1456916099773242,
+    "behavior": 0.6642490740245263,
+    "eeg_summary": 0.7228644492891328,
+    "eeg_channels": 0.9263331483209668
+  },
+  "model_selection": {
+    "behavior": {
+      "alpha": 10,
+      "validation_mae": {
+        "0.1": 0.591987473379735,
+        "1": 0.5765219234394064,
+        "10": 0.45620771810847266,
+        "100": 0.7943557709763087
+      }
+    },
+    "eeg_summary": {
+      "alpha": 10,
+      "validation_mae": {
+        "0.1": 0.7230957896381229,
+        "1": 0.6975792063373663,
+        "10": 0.6729589426910387,
+        "100": 0.7790509666557929
+      }
+    },
+    "eeg_channels": {
+      "alpha": 100,
+      "validation_mae": {
+        "0.1": 1.4338884747272818,
+        "1": 1.335348163880984,
+        "10": 0.976851206056199,
+        "100": 0.7690776945357773
+      }
+    }
+  },
+  "limitations": [
+    "Single participant and a small test segment.",
+    "Upstream EEG features use full-recording normalization.",
+    "Post-view prediction with observed viewing behavior; unsuitable for prospective ranking claims.",
+    "Clip-level predictions do not resolve within-video emotional change."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "revision": "5f40c0476bde48d195de55c933293a0849977011",
+  "python": "3.15.2",
+  "numpy": "2.5.4",
+  "sklearn": "1.9.1",
+  "alpha_grid": [
+    0.1,
+    1,
+    10,
+    100
+  ],
+  "code_sha256": {
+    "audit.py": "1070844b2c219e8abb04d377f91f192c6fcc6459bcd427f439a2d34860fa2313",
+    "evaluate.py": "f70c76506bf0d0af89373a7e88117c2eb9b1afd80ad18b7c5c9b86ef1016ad59"
+  }
+}

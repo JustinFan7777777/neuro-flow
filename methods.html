@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neuro-Flow · Methods and results</title>
+<link rel="stylesheet" href="demo.css">
+<style>
+section{margin:18px 0} h2{margin-top:12px} table{width:100%;border-collapse:collapse} th,td{text-align:left;padding:8px;border-bottom:1px solid var(--border)} pre{overflow:auto;padding:12px;background:var(--paper)} a{color:var(--link)} input[type=file]{max-width:100%} #observed-slider{width:100%} .legend{display:flex;gap:20px;flex-wrap:wrap} .legend span{border-bottom:3px solid}
+</style>
+</head>
+<body><main>
+<a class="back" href="demo.html">← Synthetic recommendation demo</a>
+<header><div class="kicker">Independent engineering study · 10 November 2026</div><h1>Methods and results</h1>
+<p class="lede">When does an additional EEG feature improve post-view immersion prediction? This pilot compares three fixed feature sets on an explicitly paired sample.</p></header>
+<section class="panel">
+<h2>Alignment audit</h2>
+<p>The released preprocessing code filters recordings before assigning EEG indices. This makes viewing order an insufficient guarantee of alignment. We matched item IDs, timestamps, viewing order and immersion labels to the authors’ benchmark, then matched each complete 310-value EEG vector exactly to the feature file.</p>
+<p>91 complete rows from participant 01 pass this check. The final benchmark row is incomplete. The earlier 30-participant comparison has been retired from the homepage because its remaining mappings are unverified.</p>
+<p><a href="https://github.com/hezy18/EEG-SVRec/tree/5f40c0476bde48d195de55c933293a0849977011">Pinned source and preprocessing code</a></p>
+</section>
+<section class="panel">
+<h2>Chronological holdout</h2>
+<p>Of the 91 verified clips, the first 63 form the development set and the final 28 form the test set. Within development, 47 clips fit the candidate models and 16 select ridge regularization from 0.1, 1, 10 and 100. Each selected model is refit on all 63 development clips. Standardization is fitted on the corresponding training subset. Predictions are clipped to the questionnaire range [1, 5].</p>
+<table><thead><tr><th>Predictor</th><th>Test MAE ↓</th></tr></thead><tbody>
+<tr><td>Training mean</td><td>1.1457</td></tr>
+<tr><td>Viewing behavior</td><td>0.6642</td></tr>
+<tr><td>Behavior + EEG band summaries</td><td>0.7229</td></tr>
+<tr><td>Behavior + all 310 EEG features</td><td>0.9263</td></tr>
+</tbody></table>
+<p>Behavior includes watch fraction, video duration and like status. The summary condition adds across-channel means and standard deviations for five bands. The channel condition retains all 62 × 5 values. Both EEG conditions have higher test error in this sample.</p>
+<p>The sample covers one participant. Upstream EEG normalization uses the full recording, and viewing behavior is observed during the clip. These results concern offline post-view prediction. Long-term recommendation value and within-video affect changes require separate measurements.</p>
+</section>
+<section class="panel">
+<h2>Replay held-out predictions</h2>
+<p>Run the source package locally, then load its <code>replay.json</code>. Each step represents one held-out video. The chart displays predictions and self-reports from the same verified observation.</p>
+<pre>python3 -m pip install -r requirements.txt
+python3 evaluate.py --cache /tmp/neuro-flow-cache --output runs/verified</pre>
+<p>The input stays in this browser tab. The source package contains the analysis scripts and font assets. The dataset is retrieved from the authors when the script runs.</p>
+<div class="controls"><label>Replay file <input type="file" id="observed-file" accept=".json,application/json"></label></div>
+<div class="controls">
+<label>EEG model <select id="observed-model" disabled><option value="eeg_summary">Band summaries</option><option value="eeg_channels">All channels</option></select></label>
+<button type="button" id="observed-play" disabled>Play</button>
+</div>
+<div class="legend"><span style="border-color:#37312d">Self-report</span><span style="border-color:#9a9086;border-bottom-style:dashed">Behavior baseline</span><span style="border-color:#ab6a21">Selected EEG model</span></div>
+<svg viewBox="0 0 600 225" role="img" aria-label="Held-out clip immersion, self-report and model predictions on a 1 to 5 scale">
+<path d="M36 30H576 M36 110H576 M36 190H576" fill="none" stroke="#e3d5c1"/>
+<text x="10" y="34">5</text><text x="10" y="114">3</text><text x="10" y="194">1</text>
+<text x="36" y="216">First held-out clip</text><text x="470" y="216">Last held-out clip</text>
+<path id="observed-line" fill="none" stroke="#37312d" stroke-width="2"/>
+<path id="behavior-line" fill="none" stroke="#9a9086" stroke-width="2" stroke-dasharray="5 3"/>
+<path id="prediction-line" fill="none" stroke="#ab6a21" stroke-width="2"/>
+</svg>
+<label for="observed-slider">Video position</label><input type="range" id="observed-slider" min="0" max="0" value="0" disabled>
+<p id="observed-status" aria-live="polite">Load the generated replay to inspect predictions.</p>
+</section>
+<footer>EEG-SVRec · Zhang et al., SIGIR 2024 · <a href="https://doi.org/10.1145/3626772.3657890">Dataset paper</a></footer>
+</main><script src="observations.js"></script></body></html>
